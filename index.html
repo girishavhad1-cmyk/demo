@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TravelRoute - Plan Your Journey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-nav">
+      <div class="logo">TravelRoute</div>
+      <nav class="nav-links">
+        <a href="#">Routes</a>
+        <div class="nav-group">
+          <span>Transport</span>
+          <div class="pill-group">
+            <span>Taxi</span>
+            <span>Bus</span>
+            <span>Train</span>
+            <span>Flights</span>
+          </div>
+        </div>
+        <a href="#">Hotels &amp; Stays</a>
+        <a href="#">Restaurants</a>
+        <a href="#">Attractions</a>
+        <a href="#">Travel Guides</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-button" aria-label="Search">
+          <span aria-hidden="true">🔍</span>
+        </button>
+        <button class="primary-btn">Login / Sign Up</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="badge">Chandigarh → Shimla</p>
+            <h1>
+              Plan Your Journey, End to End — Routes, Transport &amp; Stays in One
+              Place
+            </h1>
+            <p>
+              From buses to taxis, hotels to restaurants — everything you need
+              for your trip.
+            </p>
+          </div>
+          <div class="search-card">
+            <div class="field-group">
+              <label for="from">From</label>
+              <input id="from" placeholder="Enter source city" />
+            </div>
+            <div class="field-group">
+              <label for="to">To</label>
+              <input id="to" placeholder="Enter destination city" />
+            </div>
+            <div class="field-group">
+              <label for="date">Travel Date (optional)</label>
+              <input id="date" type="date" />
+            </div>
+            <button class="primary-btn full">Search Route</button>
+            <div class="quick-tags">
+              <span>Weekend Getaway</span>
+              <span>Hill Drive Alert</span>
+              <span>Family Friendly</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Transport Options</h2>
+          <p>Compare availability, pricing, and comfort instantly.</p>
+        </div>
+        <div class="card-grid transport">
+          <div class="card">
+            <div class="card-icon">🚕</div>
+            <h3>Taxi</h3>
+            <p>Avg. 3h 45m · From ₹3,500</p>
+            <p class="muted">Available every 15 mins</p>
+            <button class="ghost-btn">View Details</button>
+          </div>
+          <div class="card">
+            <div class="card-icon">🚌</div>
+            <h3>Bus</h3>
+            <p>Avg. 4h 20m · From ₹850</p>
+            <p class="muted">Every hour</p>
+            <button class="ghost-btn">View Details</button>
+          </div>
+          <div class="card">
+            <div class="card-icon">🚆</div>
+            <h3>Train</h3>
+            <p>Avg. 5h 15m · From ₹620</p>
+            <p class="muted">4 services daily</p>
+            <button class="ghost-btn">View Details</button>
+          </div>
+          <div class="card">
+            <div class="card-icon">✈️</div>
+            <h3>Flight</h3>
+            <p>Avg. 1h 10m · From ₹4,900</p>
+            <p class="muted">Morning &amp; evening</p>
+            <button class="ghost-btn">View Details</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split">
+        <div class="map-preview">
+          <div class="map-card">
+            <div class="map-header">
+              <h3>Route Overview</h3>
+              <span class="status">Best route suggested</span>
+            </div>
+            <div class="map-placeholder">
+              <div class="route-line"></div>
+              <div class="pin start">CHD</div>
+              <div class="pin end">SML</div>
+            </div>
+            <div class="route-details">
+              <div>
+                <span class="label">Distance</span>
+                <strong>114 km</strong>
+              </div>
+              <div>
+                <span class="label">Duration</span>
+                <strong>3h 45m</strong>
+              </div>
+              <div>
+                <span class="label">Road condition</span>
+                <strong>Hill drive alert</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="route-highlights">
+          <h2>Route Overview Preview</h2>
+          <p>
+            Get a quick snapshot of your journey with smart suggestions on the
+            best time to travel, fuel stops, and safety tips tailored for hill
+            routes.
+          </p>
+          <ul>
+            <li>Scenic stopovers at Kasauli &amp; Solan.</li>
+            <li>Live traffic indicator for Kalka-Shimla stretch.</li>
+            <li>Weather-ready alerts for mountain roads.</li>
+          </ul>
+          <button class="primary-btn">Explore Full Route</button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-header">
+          <h2>Stay &amp; Food Discovery</h2>
+          <p>Handpicked stays and eateries along the route and in the city.</p>
+        </div>
+        <div class="double-row">
+          <div class="stack">
+            <h3>Hotels &amp; Homestays</h3>
+            <div class="card-row">
+              <article class="image-card">
+                <div class="image-block"></div>
+                <div>
+                  <h4>Pine Crest Retreat</h4>
+                  <p>₹2,800 - ₹4,600 · 4.6★</p>
+                  <span class="tag">2.5 km from destination</span>
+                </div>
+              </article>
+              <article class="image-card">
+                <div class="image-block alt"></div>
+                <div>
+                  <h4>Himalayan Haven</h4>
+                  <p>₹3,100 - ₹5,200 · 4.4★</p>
+                  <span class="tag">Hill view rooms</span>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="stack">
+            <h3>Restaurants &amp; Cafes</h3>
+            <div class="card-row">
+              <article class="info-card">
+                <h4>Mountain Bistro</h4>
+                <p>Italian, Continental</p>
+                <div class="meta">
+                  <span>Popular: Pesto Pasta</span>
+                  <span>4.7★</span>
+                </div>
+                <span class="tag">In-city</span>
+              </article>
+              <article class="info-card">
+                <h4>Chai &amp; Trails</h4>
+                <p>Street Food, Café</p>
+                <div class="meta">
+                  <span>Popular: Bun Tikki</span>
+                  <span>4.5★</span>
+                </div>
+                <span class="tag">On-route</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section benefits">
+        <div class="section-header">
+          <h2>Why Use This Platform</h2>
+          <p>Everything you need to travel smarter and faster.</p>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-icon">🧭</div>
+            <h3>All travel options in one place</h3>
+            <p>Switch between taxi, bus, train, and flight instantly.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🗺️</div>
+            <h3>Route-wise recommendations</h3>
+            <p>Stops, food, and stays tailored to your travel style.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">✅</div>
+            <h3>Verified stays &amp; restaurants</h3>
+            <p>Trusted reviews and curated listings for confidence.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🌤️</div>
+            <h3>Local travel insights</h3>
+            <p>Weather, safety alerts, and seasonal tips built in.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h3>TravelRoute</h3>
+        <p>Plan worry-free journeys across India.</p>
+        <button class="primary-btn">Get the App</button>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Quick Links</h4>
+          <a href="#">Popular Routes</a>
+          <a href="#">Travel Guides</a>
+          <a href="#">Partner with Us</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <h4>Social</h4>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
